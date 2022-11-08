@@ -24,7 +24,7 @@
                 <p class="fs-6 fw-bold text-black mt-3 text-center"><span class="fw-normal">Hello,</span> Bob</p>
                 <p class="fw-light text-black text-center bg-opacity-50 mb-3" style="margin-top: -18px;">bob@mail.com</p>
             </div>
-            <ul class="list-unstyled px-2">
+            <ul class="list-unstyled px-2 overflow-visible">
                 <li class="nav-item has-submenu text-decoration-none px-4 py-4 d-block">
                     <a class="nav-link d-flex justify-content-between align-items-center" href="#">
                         <span class="material-symbols-outlined">dashboard</span><span style="margin-left: -70px;">Dashboard</span> 
@@ -194,10 +194,8 @@
                             </div>
                         </div>
 
-                        <div class="row mt-lg-5 mt-md-2 pb-4 chartContainer">
-                            <div class="col-lg-11 col-md-12 col-sm-12 mx-lg-5 ms-sm-2">
-                                <div id="chartContainer" style="height: 640px; width: 100%; border: 1px solid white; border-radius: 5px;" class="hide-pan shadow"></div>
-                            </div>
+                        <div class="col-lg-11 col-md-12 col-sm-12 mx-lg-5 ms-sm-2 mt-lg-5 mt-md-2 pb-4">
+                            <div id="chartContainer" class="hide-pan shadow"></div>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -208,21 +206,19 @@
                             </div>
                             <hr>
                             <div class="d-flex justify-content-center py-2 px-2">
-                                <button class="btn btn-outline-primary"><img src="./assets/images/Bitcoin.png" alt="" class="icon_img1"></button>
-                                <button class="btn btn-outline-primary ms-3"><img src="./assets/images/Litecoin.png" alt="" class="icon_img1"></button>
-                                <button class="btn btn-outline-primary ms-3"><img src="./assets/images/Ethereum.png" alt="" class="icon_img1"></button>
-                                <button class="btn btn-outline-primary ms-3"><img src="./assets/images/Monero.png" alt="" class="icon_img1"></button>
-                                <button class="btn btn-outline-primary ms-3"><img src="./assets/images/Tether.png" alt="" class="icon_img1"></button>
-                                <button class="btn btn-outline-primary ms-3 bitcoin"><img src="./assets/images/Bitcoin.png" alt="" class="icon_img1"></button>
+                                <a class="btn btn-outline-primary"><img src="./assets/images/Bitcoin.png" alt="" class="icon_img1"></a>
+                                <a class="btn btn-outline-primary ms-3"><img src="./assets/images/Litecoin.png" alt="" class="icon_img1"></a>
+                                <a class="btn btn-outline-primary ms-3"><img src="./assets/images/Ethereum.png" alt="" class="icon_img1"></a>
+                                <a class="btn btn-outline-primary ms-3"><img src="./assets/images/Monero.png" alt="" class="icon_img1"></a>
+                                <a class="btn btn-outline-primary ms-3 tether"><img src="./assets/images/Tether.png" alt="" class="icon_img1"></a>
                             </div>
                             <hr>
                             <div class="d-flex justify-content-center px-2">
-                                <button class="btn btn-outline-primary"><img src="./assets/images/Us Dollar Circled.png" alt="" class="icon_img1"></button>
-                                <button class="btn btn-outline-primary ms-3"><img src="./assets/images/Euro.png" alt="" class="icon_img1"></button>
-                                <button class="btn btn-outline-primary ms-3"><img src="./assets/images/Euro.png" alt="" class="icon_img1"></button>
-                                <button class="btn btn-outline-primary ms-3"><img src="./assets/images/British Pound.png" alt="" class="icon_img1"></button>
-                                <button class="btn btn-outline-primary ms-3"><img src="./assets/images/Bitcoin.png" alt="" class="icon_img1"></button>
-                                <button class="btn btn-outline-primary ms-3 dollar"><img src="./assets/images/Us Dollar Circled.png" alt="" class="icon_img1"></button>
+                                <a class="btn btn-outline-primary"><img src="./assets/images/Us Dollar Circled.png" alt="" class="icon_img1"></a>
+                                <a class="btn btn-outline-primary ms-3"><img src="./assets/images/Euro.png" alt="" class="icon_img1"></a>
+                                <a class="btn btn-outline-primary ms-3"><img src="./assets/images/Euro.png" alt="" class="icon_img1"></a>
+                                <a class="btn btn-outline-primary ms-3"><img src="./assets/images/British Pound.png" alt="" class="icon_img1"></a>
+                                <a class="btn btn-outline-primary ms-3 dollar"><img src="./assets/images/Us Dollar Circled.png" alt="" class="icon_img1"></a>
                             </div>
                         </div>
                             <div class="buy_sell shadow">
@@ -234,20 +230,20 @@
                                 <div class="d-flex mx-2">
                                     <button class="btn btn-outline-primary btn_outline2 me-3 currency_eth" style="width: 30%; height: 140px;">
                                         <img src="./assets/images/Ethereum.png" alt="" class="icon_img2">
-                                        <p class="bit">Bitcoin <br> @ <br> 8000.67</p>
+                                        <p class="bit fw-bold">Bitcoin <br> @ <br> 8000.67</p>
                                     </button>
                                     <button class="btn btn-outline-primary btn_outline2 me-3 currency_bit" style="width: 30%; height: 140px;"><img src="./assets/images/Litecoin.png" alt="" class="icon_img2">
-                                        <p class="eth">Ethereum <br> @ <br> 8000.67</p></button>
+                                        <p class="eth fw-bold">Ethereum <br> @ <br> 8000.67</p></button>
                                     <button class="btn btn-outline-primary btn_outline2" style="width: 30%; height: 140px;"><img src="./assets/images/Bitcoin.png" alt="" class="icon_img2">
-                                        <p class="lite">Litecoin <br> @ <br> 8000.67</p></button>
+                                        <p class="lite fw-bold">Litecoin <br> @ <br> 8000.67</p></button>
                                 </div>
                                 <hr>
                                 <p class="fs-6 text-secondary ms-3 py-1 mt-1">Payment Method</p>
                                 <div class="d-flex mx-2">
                                     <button class="btn btn-outline-primary btn_outline2 me-3" style="width: 45%; height: 120px;"><img src="./assets/images/Coin Wallet.png" alt="" class="icon_img2">
-                                        <p>Wallet <br> 8000.67</p></button>
+                                        <p class="fw-bold wallet">Wallet <br> 8000.67</p></button>
                                     <button class="btn btn-outline-primary btn_outline2" style="width: 45%; height: 120px;"><img src="./assets/images/Merchant Account.png" alt="" class="icon_img2">
-                                        <p>USA Bank <br> **** **** 8907</p></button>
+                                        <p class="fw-bold bank">USA Bank <br> **** **** 8907</p></button>
                                 </div>
                                 <hr>
                                 <p class="fs-6 text-secondary ms-3 py-1 mt-1">Amount</p>
