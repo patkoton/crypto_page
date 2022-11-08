@@ -127,10 +127,11 @@ p.amount {
 
 .icon_img {
     width: 60%;
+    margin-left: 10px;
 }
 
 .icon_img1 {
-    width: 100%;
+    width: 100px;
 }
 
 .icon_img2 {
