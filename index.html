@@ -15,7 +15,7 @@
         <div class="sidebar" id="side_nav">
             <div class="header-box px-2 pt-5 ms-3 pb-4 d-flex justify-content-between">
                 <h1 class="fs-4"><span class="bg-white text-dark rounded shadow px-2 me-4">PH</span><span class="text-black">CryptoAdmin</span></h1>
-                <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i class="fa-solid fa-bars-staggered"></i></button>
+                <button class="btn d-md-none d-block close-btn px-1 py-0 text-black"><i class="fa-solid fa-bars-staggered"></i></button>
             </div>
             <div class="profile mt-4">
                 <div class="d-flex justify-content-center">
@@ -145,57 +145,128 @@
             </nav>
 
             <!-- MAIN-CONTENT -->
-            <div class="dashboard px-3 pt-4">
+            <div class="dashboard px-3 pt-4 mb-4">
                 <div>
-                    <h2 class="fs-2 text-black fw-normal">Dashboard</h2>
+                    <h2 class="fs-4 text-black fw-normal ms-5">Dashboard</h2>
                 </div>
 
-                <div class="row mt-5">
-                    <div class="col-lg-5 col-md-12 col-sm-12 d-12 d-flex align-items-center mx-lg-5 ms-sm-2 bg-light shadow col-6">
-                        <div>
-                            <img src="./assets/images/Bitcoin.png" alt="">
+                <div class="row mt-4">
+                    <div class="col-lg-8 row">
+                        <div class="d-lg-flex">
+                            <div class="col-lg-5 col-md-12 col-sm-12 d-12 d-flex align-items-center me-3 ms-lg-5 ms-sm-2 bg-light shadow col-6 bitcoin">
+                                <div>
+                                    <img src="./assets/images/Bitcoin.png" alt="" class="icon_img">
+                                </div>
+                                <div class="ms-3 mt-3 amount">
+                                    <p class="fs-4 fw-bold amount">$984</p>
+                                    <p class="par_cart"><span class="material-symbols-outlined cart">show_chart</span><span class="cart_no">45%</span><span class="cart_text">This week</span></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-12 col-sm-12 d-12 d-flex align-items-center mx-lg-1 ms-sm-2 bg-light shadow col-6 monero">
+                                <div>
+                                    <img src="./assets/images/Monero.png" alt="" class="icon_img">
+                                </div>
+                                <div class="ms-3 mt-3">
+                                    <p class="fs-4 fw-bold amount">$22,567</p>
+                                    <p class="par_cart"><span class="material-symbols-outlined cart">show_chart</span><span class="cart_no">45%</span><span class="cart_text">This week</span></p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="ms-3 mt-3">
-                            <p class="fs-3 fw-bold amount">$984</p>
-                            <p class="par_cart"><span class="material-symbols-outlined cart">show_chart</span><span class="cart_no">45%</span><span class="cart_text">This week</span></p>
+
+                        <div class="d-lg-flex mt-2">
+                            <div class="col-lg-5 col-md-12 col-sm-12 d-12 d-flex align-items-center me-3 ms-lg-5 ms-sm-2  bg-light shadow col-6 ethereum">
+                                <div>
+                                    <img src="./assets/images/Ethereum.png" alt="" class="icon_img">
+                                </div>
+                                <div class="ms-3 mt-3">
+                                    <p class="fs-4 fw-bold amount">$168,331.09</p>
+                                    <p class="par_cart"><span class="material-symbols-outlined cart">show_chart</span><span class="cart_no">45%</span><span class="cart_text">This week</span></p>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-12 col-sm-12 d-12 d-flex align-items-center mx-lg-1 ms-sm-2  bg-light shadow col-6 litecoin">
+                                <div>
+                                    <img src="./assets/images/Litecoin.png" alt="" class="icon_img">
+                                </div>
+                                <div class="ms-3 mt-3">
+                                    <p class="fs-4 fw-bold amount">$7,784</p>
+                                    <p class="par_cart"><span class="material-symbols-outlined cart">show_chart</span><span class="cart_no">45%</span><span class="cart_text">This week</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-lg-5 mt-md-2 pb-4 chartContainer">
+                            <div class="col-lg-11 col-md-12 col-sm-12 mx-lg-5 ms-sm-2">
+                                <div id="chartContainer" style="height: 640px; width: 100%; border: 1px solid white; border-radius: 5px;" class="hide-pan shadow"></div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 col-md-12 col-sm-12 d-12 d-flex align-items-center mx-lg-3 mt-sm-2 ms-sm-2 bg-light shadow col-6">
-                        <div>
-                            <img src="./assets/images/Monero.png" alt="">
+                    <div class="col-lg-4">
+                        <div class="mrkt_price shadow">
+                            <div class="d-flex justify-content-around pt-4">
+                                <p class="fs-6 text-secondary ms-3">Markets</p>
+                                <input type="text" placeholder="Search.. " class="input_search">
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-center py-2 px-2">
+                                <button class="btn btn-outline-primary"><img src="./assets/images/Bitcoin.png" alt="" class="icon_img1"></button>
+                                <button class="btn btn-outline-primary ms-3"><img src="./assets/images/Litecoin.png" alt="" class="icon_img1"></button>
+                                <button class="btn btn-outline-primary ms-3"><img src="./assets/images/Ethereum.png" alt="" class="icon_img1"></button>
+                                <button class="btn btn-outline-primary ms-3"><img src="./assets/images/Monero.png" alt="" class="icon_img1"></button>
+                                <button class="btn btn-outline-primary ms-3"><img src="./assets/images/Tether.png" alt="" class="icon_img1"></button>
+                                <button class="btn btn-outline-primary ms-3 bitcoin"><img src="./assets/images/Bitcoin.png" alt="" class="icon_img1"></button>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-center px-2">
+                                <button class="btn btn-outline-primary"><img src="./assets/images/Us Dollar Circled.png" alt="" class="icon_img1"></button>
+                                <button class="btn btn-outline-primary ms-3"><img src="./assets/images/Euro.png" alt="" class="icon_img1"></button>
+                                <button class="btn btn-outline-primary ms-3"><img src="./assets/images/Euro.png" alt="" class="icon_img1"></button>
+                                <button class="btn btn-outline-primary ms-3"><img src="./assets/images/British Pound.png" alt="" class="icon_img1"></button>
+                                <button class="btn btn-outline-primary ms-3"><img src="./assets/images/Bitcoin.png" alt="" class="icon_img1"></button>
+                                <button class="btn btn-outline-primary ms-3 dollar"><img src="./assets/images/Us Dollar Circled.png" alt="" class="icon_img1"></button>
+                            </div>
                         </div>
-                        <div class="ms-3 mt-3">
-                            <p class="fs-3 fw-bold amount">$984</p>
-                            <p class="par_cart"><span class="material-symbols-outlined cart">show_chart</span><span class="cart_no">45%</span><span class="cart_text">This week</span></p>
+                            <div class="buy_sell shadow">
+                                <div class="d-flex">
+                                    <button class="btn btn-primary btn_outline" style="width: 50%; height: 50px;">Buy</button>
+                                    <button class="btn btn-outline-primary btn_outline" style="width: 50%; height: 50px;">Sell</button>
+                                </div>
+                                <p class="fs-6 text-secondary ms-3 py-1 mt-2">Currency</p>
+                                <div class="d-flex mx-2">
+                                    <button class="btn btn-outline-primary btn_outline2 me-3 currency_eth" style="width: 30%; height: 140px;">
+                                        <img src="./assets/images/Ethereum.png" alt="" class="icon_img2">
+                                        <p class="bit">Bitcoin <br> @ <br> 8000.67</p>
+                                    </button>
+                                    <button class="btn btn-outline-primary btn_outline2 me-3 currency_bit" style="width: 30%; height: 140px;"><img src="./assets/images/Litecoin.png" alt="" class="icon_img2">
+                                        <p class="eth">Ethereum <br> @ <br> 8000.67</p></button>
+                                    <button class="btn btn-outline-primary btn_outline2" style="width: 30%; height: 140px;"><img src="./assets/images/Bitcoin.png" alt="" class="icon_img2">
+                                        <p class="lite">Litecoin <br> @ <br> 8000.67</p></button>
+                                </div>
+                                <hr>
+                                <p class="fs-6 text-secondary ms-3 py-1 mt-1">Payment Method</p>
+                                <div class="d-flex mx-2">
+                                    <button class="btn btn-outline-primary btn_outline2 me-3" style="width: 45%; height: 120px;"><img src="./assets/images/Coin Wallet.png" alt="" class="icon_img2">
+                                        <p>Wallet <br> 8000.67</p></button>
+                                    <button class="btn btn-outline-primary btn_outline2" style="width: 45%; height: 120px;"><img src="./assets/images/Merchant Account.png" alt="" class="icon_img2">
+                                        <p>USA Bank <br> **** **** 8907</p></button>
+                                </div>
+                                <hr>
+                                <p class="fs-6 text-secondary ms-3 py-1 mt-1">Amount</p>
+                                <form action="">
+                                    <div class="d-flex justify-content-around px-2">
+                                        <input type="text" class="input_amount" placeholder="  899 USD ">
+                                        <span class="material-symbols-outlined">sync_alt</span>
+                                        <input type="text" class="input_amount" placeholder="  8 BTC ">
+                                    </div>
+    
+                                    <div class="py-1 mx-3">
+                                        <button class="btn btn-danger my-2" style="width: 100%; height: 40px ;">Sell Bitcoin</button>
+                                    </div>
+                                </form>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>  
-                <div class="row mt-lg-4 mt-md-2">
-                    <div class="col-lg-5 col-md-12 col-sm-12 d-12 d-flex align-items-center mx-lg-5 ms-sm-2 bg-light shadow col-6">
-                        <div>
-                            <img src="./assets/images/Ethereum.png" alt="">
-                        </div>
-                        <div class="ms-3 mt-3">
-                            <p class="fs-3 fw-bold amount">$984</p>
-                            <p class="par_cart"><span class="material-symbols-outlined cart">show_chart</span><span class="cart_no">45%</span><span class="cart_text">This week</span></p>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-md-12 col-sm-12 d-12 d-flex align-items-center mx-lg-3 mt-sm-2 ms-sm-2 bg-light shadow col-6">
-                        <div>
-                            <img src="./assets/images/Litecoin.png" alt="">
-                        </div>
-                        <div class="ms-3 mt-3">
-                            <p class="fs-3 fw-bold amount">$984</p>
-                            <p class="par_cart"><span class="material-symbols-outlined cart">show_chart</span><span class="cart_no">45%</span><span class="cart_text">This week</span></p>
-                        </div>
-                    </div>
-                </div>  
-
-                <div class="row mt-lg-5 mt-md-2 pb-4 chartContainer">
-                    <div class="col-lg-11 col-md-12 col-sm-12 mx-lg-5 ms-sm-2">
-                        <div id="chartContainer"></div>
-                    </div>
-                </div>
             </div>
             
         </div>
