@@ -38,27 +38,43 @@ window.onload = function () {
     theme: "light2", // "light1", "light2", "dark1", "dark2"
     exportEnabled: true,
     title: {
-      text: "Stock Price"
+      text: "",
+
     },
     subtitles: [{
       text: ""
     }],
     axisX: {
       interval: 1,
-      valueFormatString: "MMM"
+      valueFormatString: "MMM",
+      title: "Month",
+      titleFontSize: 20,
+      titleFontWeight: "bold",
+      labelFontSize: 15
     },
     axisY: {
       prefix: "$",
-      title: "Price"
+      interval: 15,
+      title: "Price",
+      titleFontSize: 20,
+      titleFontWeight: "bold",
+      labelFontSize: 15
     },
     toolTip: {
       content: "Date: {x}<br /><strong>Price:</strong><br />Open: {y[0]}, Close: {y[3]}<br />High: {y[1]}, Low: {y[2]}"
     },
+    options: { 
+      layout: { 
+        margin: { 
+          top: 50 
+        } 
+      } 
+    }, 
     data: [{
       type: "candlestick",
       yValueFormatString: "$##0.00",
       dataPoints: dataPoints
-    }]
+    }],
   });
   
   $.get("https://canvasjs.com/data/gallery/javascript/netflix-stock-price.csv", getDataPointsFromCSV);
