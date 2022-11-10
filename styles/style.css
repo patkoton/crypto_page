@@ -452,6 +452,34 @@ a.button {
     border-radius: 30px;
 }
 
+.main_order {
+    margin-top: 30px;
+}
+
+div.order, div.order2 {
+    width: 49%;
+    height: 620px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+div.order2 {
+    margin-right: 0px;
+}
+
+div.coin_button {
+    width: 95%;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #eee;
+    padding-top: 6px;
+    padding-left: 20px;
+}
+
+
+
+
 
 
 
@@ -497,7 +525,7 @@ a.button {
         margin-left: 10px;
     }
 
-    div.statistics, div.statistics2, div.card_lemon, div.card_blue, div.card_purple {
+    div.statistics, div.statistics2, div.card_lemon, div.card_blue, div.card_purple, div.order, div.order2  {
         width: 100%;
     }
 
@@ -598,8 +626,6 @@ a.button {
 
     p.wallet, p.bank {
         font-size: 13px;
-    }
-
-    
+    }  
 }
 
