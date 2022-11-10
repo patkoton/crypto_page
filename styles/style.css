@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100% !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    background-color: #eee;
+}
+
+.navbar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.rounded-pill {
+    background-color: #eee;
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: -7px;
+    left: 25px;
+    padding: 4px 6px;
+    border-radius: 50%;
+    background: #2258bf;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.sidebar {
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    max-height: 100%; 
+    overflow-y: auto;
+    scrollbar-width: thin; 
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 11px;
+  }
+
+#side_nav {
+    background-color: #ffffff;
+    min-width: 300px;
+    max-width: 300px;
+    transition: all 0.3s;
+}
+
+.sidebar li .submenu{ 
+    list-style: circle; 
+    color: #000;
+    margin: 0; 
+    padding: 0; 
+    padding-left: 1rem; 
+    padding-right: 1rem;
+    background: none;
+}
+
+.sidebar li .submenu li {
+    margin-top: 20px;
+}
+
+.content {
+    min-height: 100vh;
+    width: 100%;
+    margin-left: 300px;
+}
+
+.sidebar li.active {
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.sidebar li.active a, .sidebar li.active a:hover {
+    color: #000;
+}
+
+.sidebar li a {
+    color: #000;
+}
+
+.header-box {
+    padding-top: 40px;
+}
+
+.profile_img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.col-6 {
+    background-color: #fff;
+    width: 49%;
+    height: 130px;
+    border-radius: 30px;
+    position: relative;
+}
+
+.bitcoin, .ethereum {
+    margin-right: 20px;
+}
+
+.bitcoim, .monero {
+    margin-bottom: 20px;
+}
+
+p.amount {
+    position: absolute;
+    top: 21px;
+    left: 110px;
+}
+
+.par_cart {
+    position: absolute;
+    top: 67px;
+    left: 110px;
+}
+
+
+.cart_no, .cart_no2 {
+    color: #78e57d;
+    font-size: 13px;
+}
+
+.cart_no2 {
+    color: red;
+}
+
+.cart_text {
+    color: #a4a9b6;
+    font-size: 13px;
+}
+
+.icon_img {
+    width: 60%;
+    margin-left: 20px;
+}
+
+.icon_img1 {
+    width: 100%;
+}
+
+.icon_img2 {
+    width: 50%;
+}
+
+.div_country {
+    width: 250px;
+    height: 60px;
+    background-color: #ffffff;
+    border-radius: 50px;
+}
+
+.btn_filter {
+    width: 200px;
+    height: 60px;
+    background-color: #2258bf;
+    border-radius: 50px;
+    color: #ffffff;
+    padding-top: 16px;
+}
+
+.btn_filter:hover {
+    background-color: #194089;
+    color: #ffffff;
+}
+
+.img_filter {
+    color: white;
+}
+
+.medan {
+    font-size: 13px;
+}
+
+form.example {
+    width: 35%;
+    position: relative;
+}
+
+form.test {
+    width: 50%;
+}
+
+/* Style the search field */
+form.example input[type=text], form.test input[type=text] {
+    padding: 10px 30px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #292929;
+    border: 1px solid #eee;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-right: none; 
+    outline: none;
+    float: left;
+    width: 80%;
+    height: 70px;
+    background: #eee;
+}
+
+form.test input[type=text] {
+    height: 30px;
+    padding: 5px;
+    font-size: 13px;
+}
+  
+/* Style the submit button */
+form.example button, form.test button {
+    float: left;
+    width: 20%;
+    height: 70px;
+    padding: 20px;
+    background: #eee;
+    color: #aca093;
+    font-size: 20px;
+    border: 1px solid #eee;
+    border-left: none; 
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;/* Prevent double borders */
+    cursor: pointer;
+}
+
+form.test button {
+    height: 30px;
+    padding: 5px;
+    font-size: 13px;
+}
+
+input::placeholder {
+    color: #aca093;
+}
+
+form.example button:hover {
+    background: #2258bf;
+}
+
+/* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#chart1 {
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* #chartContainer {
+    height: 630px; 
+    width: 100%; 
+    border: 1px solid #ffffff; 
+    border-radius: 5px;
+}
+
+.hide-pan .canvasjs-chart-toolbar > button:first-child {
+    display: none !important;
+} */
+
+ul {
+    list-style: none; /* Remove default bullets */
+}
+  
+ul li.income::before, ul li.spend::before, ul li.install::before, ul li.invest::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: orange; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+ul li.spend::before {
+    color: blue;
+}
+
+ul li.install::before {
+    color: green;
+}
+ul li.invest::before {
+    color: red;
+}
+
+span.income {
+    margin-right: 52px;
+}
+
+span.spend {
+    margin-right: 63px;
+}
+
+span.install {
+    margin-right: 47px;
+}
+
+span.invest {
+    margin-right: 75px;
+}
+
+div.statistics, div.statistics2 {
+    width: 35%;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    margin-right: 20px;
+}
+
+div.statistics2 {
+    width: 62%;
+    margin-right: 0px;
+}
+
+button.weekly {
+    border-radius: 50px;
+}
+
+a.weekly {
+    color: #2258bf;
+}
+
+div.grp_cards {
+    overflow-x: auto;
+}
+
+div.card_lemon, div.card_blue, div.card_purple {
+    width: 37%;
+    height: 245px;
+    background-color: #70b944;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+div.card_blue {
+    background-color: #4a8cda;
+}
+
+div.card_purple {
+    background-color: #6647bf;
+}
+
+.grp_circle {
+    margin-top: -15px;
+}
+
+.main_bal {
+    font-size: 14px;
+}
+
+div.circle_1 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    opacity: .7;
+}
+
+div.circle_2 {
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    z-index: 1;
+    margin-left: -15px;
+    opacity: .7;
+}
+
+div.valid {
+    margin-top: 35px;
+}
+
+div.name {
+    margin-top: -15px;
+}
+
+p.valid {
+    color: #ffffff;
+    opacity: .6;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+p.name {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+.btn_outline {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    width: 50%;
+    height: 50px;
+}
+
+.btn_outline2 {
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.buy_sell {
+    height: 630px;
+    background-color: #fff;
+    margin-top: 47px;
+    border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+    #side_nav {
+        margin-left: -300px;
+        position: fixed;
+        min-height: 100vh;
+        z-index: 1;
+    }
+
+    #side_nav.active {
+        margin-left: 0;
+    }
+
+    .grp_icons {
+        margin-top: 20px;
+    }
+
+    .col-6 {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    div.statistics, div.statistics2, div.card_lemon, div.card_blue, div.card_purple {
+        width: 100%;
+    }
+
+    .content {
+        margin-left: 0;
+    }
+
+    div.statistics2, div.card_blue, div.card_purple, .div_country2 {
+        margin-top: 20px;
+    }
+
+    .div_country {
+        width: 200px;
+    }
+}
+
+@media only screen and (width: 768px) {
+    
+    .monero, .litecoin {
+        margin-top: 10px;
+        margin-left: 0 !important;
+    }
+
+    .monero, .litecoin, .bitcoin, .ethereum {
+        width: 90%;
+    }
+
+    .mrkt_price {
+        height: 220px;
+    }
+
+    div.statistics, div.statistics2, div.card_lemon, div.card_blue, div.card_purple {
+        width: 90%;
+    }
+
+    div.statistics2, div.card_blue, div.card_purple {
+        margin-top: 20px;
+    }
+
+    form.example {
+        display: none;
+    }
+
+    .div_country, .div_country2 {
+        width: 200px;
+    }
+
+}
+
+@media only screen and (width: 1024px) {
+    .col-6 {
+        width: 100%;
+    }
+
+    #side_nav {
+        min-height: 100vh;
+    }
+
+    div.amount {
+        margin-right: 50px !important;
+    }
+
+    .monero, .litecoin {
+        display: none !important;
+    }
+
+    .bitcoin, .ethereum {
+        width: 85%;
+    }
+
+    .mrkt_price {
+      padding: 0 10px;
+    }
+
+    a.tether, a.dollar {
+        display: none;
+    }
+
+    .icon_img1 {
+        width: 150%;
+    }
+
+    .currency_bit, .currency_eth {
+        margin-right: 8px !important;
+    }
+
+    p.bit, p.eth, p.lite {
+        font-size: 9px;
+    }
+
+    p.wallet, p.bank {
+        font-size: 13px;
+    }
+
+    
+}
+

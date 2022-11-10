@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    color: #2258bf;
+}
+
+.main_login_div {
+    background-color: #e0e6f0;
+    height: 100vh;
+}
+
+.login_div {
+    background-color: #ffffff;
+    width: 37%;
+    height: 85%;
+    border-radius: 10px;
+}
+
+.form-label, .form-check-label {
+    color: #969ca1;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-check-label {
+    font-weight: normal;
+}
+
+input::placeholder {
+    font-size: 14px;
+}
+
+input {
+    height: 50px;
+}
+
+.btn_submit {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #2258bf;
+    color: #ffffff;
+    padding-top: 10px;
+}
+
+.btn_submit:hover {
+    background-color: #ffffff;
+    border: 1px solid #2258bf;
+    color: #2258bf;
+}
+
+.account {
+    color: #2258bf;
+}
+
+h1.four {
+    font-size: 150px;
+}
+
+.div404 {
+    width: 45%;
+    text-align: center;
+    line-height: 40px;
+}
+
+.img404 {
+    width: 50px;
+    margin-top: -20px;
+}
+
+.par404 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.par2-404 {
+    margin-top: -25px;
+}
+
+.back_home_btn {
+    color: #ffffff;
+    background-color: #2258bf;
+    font-weight: 500;
+    height: 50px;
+    padding-top: 12px;
+}
+
+@media (max-width: 768px) {
+    .login_div {
+        width: 100%;
+        margin: 0 10px;
+        padding: 30px 20px !important;
+    }
+
+    .div404 {
+        width: 100%;
+    }
+}

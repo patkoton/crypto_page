@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Page</title>
+    <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/form.css">
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center main_login_div w-100">
+        <div class="bg-white login_div p-5 shadow">
+            <div class="text-center mb-3">
+                <a class="fs-3 fw-bold logo" href="./index.html">CryptoAdmin</a>
+            </div>
+            
+            <h1 class="text-center fs-5 text-black">Sign up your account</h1>
+            <form>
+                <div class="mb-3"> 
+                    <label for="exampleInputName1" class="form-label">Username <span class="required">*</span></label>
+                    <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder='username'  />
+                </div>
+
+                <div class="mb-3"> 
+                    <label for="exampleInputEmail1" class="form-label">Email <span class="required">*</span></label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder='bob@example.com'  />
+                </div>
+
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label" >Password <span class="required">*</span></label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********">
+                </div>
+
+                <div class="mb-3 mt-4">
+                    <a href="" class="btn btn_submit fw-bold" type="submit">Sign Me Up</a>
+                </div>
+            </form>
+            <p class="form-check-label mt-3">Don't have an account?  <a href="./login.html" class="account">Sign in</a></p>
+        </div>
+    </div>
+    <script src="./assets/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>    
+</body>
+</html>

@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Crypto Admin Page</title>
 </head>
 <body>
     <div class="main-container d-flex">
-        <!-- SIDEBAR -->
+        <!-- SIDEBAR <span class="bg-white text-dark rounded shadow px-2 me-4">PH</span>-->
         <div class="sidebar" id="side_nav">
-            <div class="header-box px-2 ms-3 pb-4 d-flex justify-content-between">
-                <h1 class="fs-4"><span class="bg-white text-dark rounded shadow px-2 me-4">PH</span><span class="text-black">CryptoAdmin</span></h1>
+            <div class="header-box px-2 ms-3 pb-4 d-flex justify-content-center">
+                <a class="fs-4 text-black" href="./index.html">CryptoAdmin</a>
                 <button class="btn d-md-none d-block close-btn px-1 py-0 text-black"><i class="fa-solid fa-bars-staggered"></i></button>
             </div>
             <div class="profile mt-4">
@@ -32,9 +32,10 @@
                         <span class="material-symbols-outlined">keyboard_arrow_down</span>
                     </a>
                     <ul class="submenu collapse ms-4">
-                        <li><a class="nav-link" href="#">Submenu item 1 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 2 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+                        <li><a class="nav-link" href="#">Coin Details </a></li>
+                        <li><a class="nav-link" href="#">My Wallet </a></li>
+                        <li><a class="nav-link" href="#">Transactions </a> </li>
+                        <li><a class="nav-link" href="#">Market Capital </a> </li>
                     </ul>
                 </li>
                 <li class="nav-item has-submenu text-decoration-none px-4 py-4 d-block">
@@ -43,9 +44,10 @@
                         <span class="material-symbols-outlined">keyboard_arrow_down</span>
                     </a>
                     <ul class="submenu collapse ms-4">
-                        <li><a class="nav-link" href="#">Submenu item 1 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 2 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+                        <li><a class="nav-link" href="#">Profile </a></li>
+                        <li><a class="nav-link" href="#">Email </a></li>
+                        <li><a class="nav-link" href="#">Calendar </a> </li>
+                        <li><a class="nav-link" href="#">Shop </a> </li>
                     </ul>
                 </li>
                 <li class="nav-item has-submenu text-decoration-none px-4 py-4 d-block">
@@ -54,31 +56,9 @@
                         <span class="material-symbols-outlined">keyboard_arrow_down</span>
                     </a>
                     <ul class="submenu collapse ms-4">
-                        <li><a class="nav-link" href="#">Submenu item 1 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 2 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
-                    </ul>
-                </li>
-                <li class="nav-item has-submenu text-decoration-none px-4 py-4 d-block">
-                    <a class="nav-link d-flex justify-content-between align-items-center" href="#">
-                        <span class="material-symbols-outlined">account_balance_wallet</span><span style="margin-left: -70px;">Wallet</span> 
-                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
-                    </a>
-                    <ul class="submenu collapse ms-4">
-                        <li><a class="nav-link" href="#">Submenu item 1 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 2 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
-                    </ul>
-                </li>
-                <li class="nav-item has-submenu text-decoration-none px-4 py-4 d-block">
-                    <a class="nav-link d-flex justify-content-between align-items-center" href="#">
-                        <span class="material-symbols-outlined">table_chart</span><span style="margin-left: -70px;">Table</span> 
-                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
-                    </a>
-                    <ul class="submenu collapse ms-4">
-                        <li><a class="nav-link" href="#">Submenu item 1 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 2 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+                        <li><a class="nav-link" href="#">Flot </a></li>
+                        <li><a class="nav-link" href="#">Chart js </a></li>
+                        <li><a class="nav-link" href="#">Chartist </a> </li>
                     </ul>
                 </li>
                 <li class="nav-item has-submenu text-decoration-none px-4 py-4 d-block">
@@ -87,33 +67,39 @@
                         <span class="material-symbols-outlined">keyboard_arrow_down</span>
                     </a>
                     <ul class="submenu collapse ms-4">
-                        <li><a class="nav-link" href="#">Submenu item 1 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 2 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+                        <li><a class="nav-link" href="./login.html">Login </a></li>
+                        <li><a class="nav-link" href="./register.html">Register </a></li>
+                        <li><a class="nav-link has-submenu" href="#">Error</a> 
+                            <ul class="nav-link submenu collapse">
+                                <li><a class="nav-link" href="./404.html">Error 404</a></li>
+                                <li><a class="nav-link" href="#">Error 403</a></li>
+                                <li><a class="nav-link" href="#">Error 400</a> </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>   
+                <li class="nav-item has-submenu text-decoration-none px-4 py-4 d-block">
+                    <a class="nav-link d-flex justify-content-between align-items-center" href="#">
+                        <span class="material-symbols-outlined">account_balance_wallet</span><span style="margin-left: -70px;">Forms</span> 
+                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
+                    </a>
+                    <ul class="submenu collapse ms-4">
+                        <li><a class="nav-link" href="#">Form Elements </a></li>
+                        <li><a class="nav-link" href="#">CkEditor </a></li>
+                        <li><a class="nav-link" href="#">Pickers </a> </li>
                     </ul>
                 </li>
                 <li class="nav-item has-submenu text-decoration-none px-4 py-4 d-block">
                     <a class="nav-link d-flex justify-content-between align-items-center" href="#">
-                        <span class="material-symbols-outlined">settings</span><span style="margin-left: -70px;">Settings</span> 
+                        <span class="material-symbols-outlined">table_chart</span><span style="margin-left: -70px;">Table</span> 
                         <span class="material-symbols-outlined">keyboard_arrow_down</span>
                     </a>
                     <ul class="submenu collapse ms-4">
-                        <li><a class="nav-link" href="#">Submenu item 1 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 2 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
+                        <li><a class="nav-link" href="#">Datatable </a></li>
+                        <li><a class="nav-link" href="#">Bootstrap </a></li>
                     </ul>
                 </li>
-                <li class="nav-item has-submenu text-decoration-none px-4 py-4 d-block">
-                    <a class="nav-link d-flex justify-content-between align-items-center" href="#">
-                        <span class="material-symbols-outlined">notifications</span><span style="margin-left: -70px;">Notifications</span> 
-                        <span class="material-symbols-outlined">keyboard_arrow_down</span>
-                    </a>
-                    <ul class="submenu collapse ms-4">
-                        <li><a class="nav-link" href="#">Submenu item 1 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 2 </a></li>
-                        <li><a class="nav-link" href="#">Submenu item 3 </a> </li>
-                    </ul>
-                </li>
+                         
                 
             </ul>
         </div>
@@ -132,7 +118,7 @@
                     </button>
                   <div class="collapse navbar-collapse justify-content-between mx-4" id="navbarSupportedContent">
                         <form class="example" action="action_page.php">
-                            <input type="text" placeholder="Search.." name="search">
+                            <input type="text" placeholder="Find something here......" name="search">
                             <button type="submit"><i class="fa fa-search"></i></button>
                         </form>
             
@@ -147,136 +133,215 @@
             </nav>
 
             <!-- MAIN-CONTENT -->
-            <div class="dashboard px-3 pt-4 mb-4">
-                <div>
-                    <h2 class="fs-4 text-black fw-normal ms-3">Dashboard</h2>
+            <div class="px-3 pt-4 mb-4 ms-lg-4 ms-md-2 ms-sm-2">
+                <div class="d-lg-flex align-items-center justify-content-between mx-auto">
+                    <div>
+                        <h2 class="fs-2 fw-semibold text-black fw-normal">Dashboard</h2>
+                    </div>
+
+                    <div class="grp_button d-lg-flex d-md-flex">
+
+                        <div class="div_country d-flex justify-content-center align-items-center me-3">
+                            <img src="./assets/images/Clouds.png" alt="" width="25px" class="mx-3">
+                            <span class="text-black fw-semibold fs-4">21</span>
+                            <div class="dropdown">
+                                <button class="btn btn-light bg-transparent border-0 dropdown-toggle fw-semibold medan" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Medan IDN
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item fw-semibold medan" href="#">Medan IDN</a></li>
+                                  <li><a class="dropdown-item medan" href="#">Jakarta IDN</a></li>
+                                  <li><a class="dropdown-item medan" href="#">Surabaya IDN</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="div_country2">
+                            <a href="" class="btn btn_filter"><img src="./assets/images/Calendar Week.png" alt="" width="25px" class="img_filter"> Filter Periode</a>
+                        </div>
+                    </div>  
+                    
                 </div>
 
                 <div class="row mx-auto mt-4">
-                    <div class="col-lg-8 row">
-                        <div class="d-lg-flex">
-                            <div class="col-lg-6 col-md-12 col-sm-12 d-12 d-flex align-items-center bg-light shadow col-6 bitcoin">
-                                <div>
-                                    <img src="./assets/images/Bitcoin.png" alt="" class="icon_img">
-                                </div>
-                                <div class="amount">
-                                    <p class="fs-5 fw-bold amount">$984</p>
-                                    <p class="par_cart"><span class="material-symbols-outlined cart">show_chart</span><span class="cart_no">45%</span><span class="cart_text">This week</span></p>
-                                </div>
+                    <div class="d-lg-flex">
+                        <div class="col-lg-6 col-md-12 col-sm-12 d-12 d-flex align-items-center bg-light shadow col-6 bitcoin">
+                            <div>
+                                <img src="./assets/images/Bitcoin.png" alt="" class="icon_img">
                             </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 d-12 d-flex align-items-center mx-lg-1 ms-sm-2 bg-light shadow col-6 monero">
-                                <div>
-                                    <img src="./assets/images/Monero.png" alt="" class="icon_img">
-                                </div>
-                                <div class="">
-                                    <p class="fs-5 fw-bold amount">$22,567</p>
-                                    <p class="par_cart"><span class="material-symbols-outlined cart">show_chart</span><span class="cart_no">45%</span><span class="cart_text">This week</span></p>
-                                </div>
+                            <div class="amount">
+                                <p class="fs-2 fw-semibold amount">$984</p>
+                                <p class="par_cart"><img src="./assets/images/Combo Chart.1.png" alt="" style="width: 25px;"><span class="cart_no me-2">45%</span><span class="cart_text">This week</span></p>
                             </div>
                         </div>
-
-                        <div class="d-lg-flex mt-2">
-                            <div class="col-lg-6 col-md-12 col-sm-12 d-12 d-flex align-items-center bg-light shadow col-6 ethereum">
-                                <div>
-                                    <img src="./assets/images/Ethereum.png" alt="" class="icon_img">
-                                </div>
-                                <div class="">
-                                    <p class="fs-5 fw-bold amount">$168,331</p>
-                                    <p class="par_cart"><span class="material-symbols-outlined cart">show_chart</span><span class="cart_no">45%</span><span class="cart_text">This week</span></p>
-                                </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 d-12 d-flex align-items-center mx-lg-1 ms-sm-2 bg-light shadow col-6 monero">
+                            <div>
+                                <img src="./assets/images/Monero.png" alt="" class="icon_img">
                             </div>
-                            <div class="col-lg-6 col-md-12 col-sm-12 d-12 d-flex align-items-center mx-lg-1 ms-sm-2  bg-light shadow col-6 litecoin">
-                                <div>
-                                    <img src="./assets/images/Litecoin.png" alt="" class="icon_img">
-                                </div>
-                                <div class="">
-                                    <p class="fs-5 fw-bold amount">$7,784</p>
-                                    <p class="par_cart"><span class="material-symbols-outlined cart">show_chart</span><span class="cart_no">45%</span><span class="cart_text">This week</span></p>
-                                </div>
+                            <div class="">
+                                <p class="fs-2 fw-semibold amount">$22,567</p>
+                                <p class="par_cart"><img src="./assets/images/Combo Chart.1.png" alt="" style="width: 25px;"><span class="cart_no me-2">45%</span><span class="cart_text">This week</span></p>
                             </div>
-                        </div>
-
-                        <div class="col-lg-12 col-md-12 col-sm-12 mt-lg-5 mt-md-2 pb-4">
-                            <div id="chartContainer" class="hide-pan shadow"></div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="mrkt_price shadow">
-                            <div class="d-flex justify-content-around pt-3">
-                                <p class="fs-6 text-secondary ms-3">Markets</p>
-                                <form class="test" action="action_page.php">
-                                    <input type="text" placeholder="Search.." name="search">
-                                    <button type="submit"><i class="fa fa-search"></i></button>
-                                </form>
+
+                    <div class="d-lg-flex mt-2">
+                        <div class="col-lg-6 col-md-12 col-sm-12 d-12 d-flex align-items-center bg-light shadow col-6 ethereum">
+                            <div>
+                                <img src="./assets/images/Ethereum.png" alt="" class="icon_img">
                             </div>
-                            <hr style="margin-top: -2px;">
-                            <div class="d-flex justify-content-center px-2">
-                                <a class="btn btn-outline-primary"><img src="./assets/images/Bitcoin.png" alt="" class="icon_img1"></a>
-                                <a class="btn btn-outline-primary ms-3"><img src="./assets/images/Litecoin.png" alt="" class="icon_img1"></a>
-                                <a class="btn btn-outline-primary ms-3"><img src="./assets/images/Ethereum.png" alt="" class="icon_img1"></a>
-                                <a class="btn btn-outline-primary ms-3"><img src="./assets/images/Monero.png" alt="" class="icon_img1"></a>
-                                <a class="btn btn-outline-primary ms-3 tether"><img src="./assets/images/Tether.png" alt="" class="icon_img1"></a>
-                            </div>
-                            <hr>
-                            <div class="d-flex justify-content-center px-2">
-                                <a class="btn btn-outline-primary"><img src="./assets/images/Us Dollar Circled.png" alt="" class="icon_img1"></a>
-                                <a class="btn btn-outline-primary ms-3"><img src="./assets/images/Euro.png" alt="" class="icon_img1"></a>
-                                <a class="btn btn-outline-primary ms-3"><img src="./assets/images/Euro.png" alt="" class="icon_img1"></a>
-                                <a class="btn btn-outline-primary ms-3"><img src="./assets/images/British Pound.png" alt="" class="icon_img1"></a>
-                                <a class="btn btn-outline-primary ms-3 dollar"><img src="./assets/images/Us Dollar Circled.png" alt="" class="icon_img1"></a>
+                            <div class="">
+                                <p class="fs-2 fw-semibold amount">$168,331</p>
+                                <p class="par_cart"><img src="./assets/images/Combo Chart (2).png" alt="" style="width: 25px;"><span class="cart_no2 me-2">45%</span><span class="cart_text">This week</span></p>
                             </div>
                         </div>
-                        <div class="buy_sell shadow">
-                            <div class="btn-group w-100" role="group" aria-label="Basic outlined example">
-                                <button type="button" class="btn btn-outline-primary btn_outline">Buy</button>
-                                <button type="button" class="btn btn-outline-primary btn_outline">Sell</button>
+                        <div class="col-lg-6 col-md-12 col-sm-12 d-12 d-flex align-items-center mx-lg-1 ms-sm-2  bg-light shadow col-6 litecoin">
+                            <div>
+                                <img src="./assets/images/Litecoin.png" alt="" class="icon_img">
                             </div>
-                            <p class="fs-6 text-secondary ms-3 py-1 mt-2">Currency</p>
-                            <div class="d-flex mx-2">
-                                <button class="btn btn-outline-primary btn_outline2 me-3 currency_eth" style="width: 30%; height: 140px;">
-                                    <img src="./assets/images/Ethereum.png" alt="" class="icon_img2">
-                                    <p class="bit fw-bold">Bit <br> @ <br> 8000.67</p>
-                                </button>
-                                <button class="btn btn-outline-primary btn_outline2 me-3 currency_bit" style="width: 30%; height: 140px;"><img src="./assets/images/Litecoin.png" alt="" class="icon_img2">
-                                    <p class="eth fw-bold">Eth <br> @ <br> 8000.67</p></button>
-                                <button class="btn btn-outline-primary btn_outline2" style="width: 30%; height: 140px;"><img src="./assets/images/Bitcoin.png" alt="" class="icon_img2">
-                                    <p class="lite fw-bold">Lite <br> @ <br> 8000.67</p></button>
+                            <div class="">
+                                <p class="fs-2 fw-semibold amount">$7,784</p>
+                                <p class="par_cart"><img src="./assets/images/Combo Chart (2).png" alt="" style="width: 25px;"><span class="cart_no2 me-2">45%</span><span class="cart_text">This week</span></p>
                             </div>
-                            <hr>
-                            <p class="fs-6 text-secondary ms-3 py-1 mt-1">Payment Method</p>
-                            <div class="d-flex mx-2">
-                                <button class="btn btn-outline-primary btn_outline2 me-3" style="width: 45%; height: 120px;"><img src="./assets/images/Coin Wallet.png" alt="" class="icon_img2">
-                                    <p class="fw-bold wallet">Wallet <br> 8000.67</p></button>
-                                <button class="btn btn-outline-primary btn_outline2" style="width: 45%; height: 120px;"><img src="./assets/images/Merchant Account.png" alt="" class="icon_img2">
-                                    <p class="fw-bold bank">USA Bank <br> **** **** 8907</p></button>
-                            </div>
-                            <hr>
-                            <p class="fs-6 text-secondary ms-3 py-1 mt-1">Amount</p>
-                            <form action="">
-                                <div class="d-flex justify-content-around px-2">
-                                    <input type="text" class="input_amount" placeholder="  899 USD ">
-                                    <span class="material-symbols-outlined">sync_alt</span>
-                                    <input type="text" class="input_amount" placeholder="  8 BTC ">
-                                </div>
-
-                                <div class="py-1 mx-3">
-                                    <button class="btn btn-danger my-2" style="width: 100%; height: 40px ;">Sell Bitcoin</button>
-                                </div>
-                            </form>
-                            
                         </div>
                     </div>
+
+                    <!-- <div class="col-lg-12 col-md-12 col-sm-12 mt-lg-5 mt-md-2 pb-4">
+                        <div id="chartContainer" class="hide-pan shadow"></div>
+                    </div> -->
                 </div>  
+
+                <div class="row mt-5 mx-auto">
+                    <div class="col-lg-4 col-md-4 col-sm-12 statistics">
+                        <h1 class="fs-5 fw-semibold p-4">Current Statistic</h1>
+                        <div id="chart1"></div>
+                        <ul class="">
+                            <li class="income"><span class="text-secondary income">Income (66%)</span><span class="text-black fw-semibold">$167,884.21</span></li>
+                            <li class="spend"><span class="text-secondary spend">Spends (50%)</span><span class="text-black fw-semibold">$56,411.33</span></li>
+                            <li class="install"><span class="text-secondary install">Instalment (11%)</span><span class="text-black fw-semibold">$56,411.33</span></li>
+                            <li class="invest"><span class="text-secondary invest">Invest (23%)</span><span class="text-black fw-semibold">$56,411.33</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8 col-md-8 col-sm-12 statistics2 ps-4">
+                        <div class="d-flex justify-content-between align-items-center pt-4">
+                            <div>
+                                <h1 class="fs-5 fw-semibold">Market Overview</h1>
+                                <p style="font-size: 13px;">Lorem ipsum dolor sit amet, consectetur</p>
+                            </div>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">ETH</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">XMR</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">LTC</label>
+                                  </div>
+                                  <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                    <label class="form-check-label" for="inlineRadio3">XMR</label>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-outline-secondary text-primary fw-semibold bg-light dropdown-toggle weekly" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Weekly (2020)
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item weekly fw-semibold" href="#">Weekly (2020)</a></li>
+                              <li><a class="dropdown-item weekly" href="#">Daily (2020)</a></li>
+                              <li><a class="dropdown-item weekly" href="#">Yearly (2020)</a></li>
+                            </ul>
+                        </div>
+                        <div id="chart"></div>
+                    </div>
+                </div>
+
+                <div class="d-lg-flex mt-5 mx-auto grp_cards">
+                    <div class="card_lemon pt-5 ps-4">
+                        <h1 class="text-white main_bal">Main Balance</h1>
+                        <div class="d-flex justify-content-between align-items-center pe-4">
+                            <div>
+                                <h1 class="fs-3 text-white opacity-100 fw-semibold">$673,412.66</h1>
+                            </div>
+                            <div class="d-flex grp_circle">
+                                <div class="circle_1"></div>
+                                <div class="circle_2"></div>
+                            </div>
+                        </div>
+                        <div class="d-flex valid">
+                            <p class="valid me-3">VALID THRU</p>
+                            <p class="valid">CARD HOLDER</p>
+                        </div>
+                        <div class="d-flex name">
+                            <p class="name me-5">08/21</p>
+                            <p class="name">Marquezz Silalahi</p>
+                        </div>
+                    </div>
+                    <div class="card_blue pt-5 ps-4">
+                        <h1 class="text-white main_bal">Main Balance</h1>
+                        <div class="d-flex justify-content-between align-items-center pe-4">
+                            <div>
+                                <h1 class="fs-3 text-white opacity-100 fw-semibold">$673,412.66</h1>
+                            </div>
+                            <div class="d-flex grp_circle">
+                                <div class="circle_1"></div>
+                                <div class="circle_2"></div>
+                            </div>
+                        </div>
+                        <div class="d-flex valid">
+                            <p class="valid me-3">VALID THRU</p>
+                            <p class="valid">CARD HOLDER</p>
+                        </div>
+                        <div class="d-flex name">
+                            <p class="name me-5">08/21</p>
+                            <p class="name">Marquezz Silalahi</p>
+                        </div>
+                    </div>
+                    <div class="card_purple pt-5 ps-4">
+                        <h1 class="text-white main_bal">Main Balance</h1>
+                        <div class="d-flex justify-content-between align-items-center pe-4">
+                            <div>
+                                <h1 class="fs-3 text-white opacity-100 fw-semibold">$673,412.66</h1>
+                            </div>
+                            <div class="d-flex grp_circle">
+                                <div class="circle_1"></div>
+                                <div class="circle_2"></div>
+                            </div>
+                        </div>
+                        <div class="d-flex valid">
+                            <p class="valid me-3">VALID THRU</p>
+                            <p class="valid">CARD HOLDER</p>
+                        </div>
+                        <div class="d-flex name">
+                            <p class="name me-5">08/21</p>
+                            <p class="name">Marquezz Silalahi</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             
         </div>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="./main.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/c3f0615e4f.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="       
+            crossorigin="anonymous">
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous">
+    </script>
     <script src="./assets/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>

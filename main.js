@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
 
-
+// GrApH
 window.onload = function () {
 
   var dataPoints = [];
@@ -104,3 +104,65 @@ window.onload = function () {
   }
   
   }
+
+
+
+
+// RadialBar Angle
+  var options1 = {
+    chart: {
+      height: 280,
+      type: "radialBar",
+    },
+    series: [85, 60, 67, 50],
+    plotOptions: {
+      radialBar: {
+        startAngle: -90,
+        endAngle: 90,
+        track: {
+          background: '#333',
+          startAngle: -90,
+          endAngle: 90,
+        },
+        dataLabels: {
+          total: {
+            show: false,
+            label: 'TOTAL'
+          }
+        }
+      }
+    },
+    labels: ['Income', 'Income', 'Income', 'Income']
+  };
+  
+  new ApexCharts(document.querySelector("#chart1"), options1).render();
+
+  
+  // Line Chart
+  var options = {
+    chart: {
+      height: 350,
+      type: 'line'
+    },
+    stroke: {
+      curve: 'smooth',
+    },
+    series: [{
+      name: 'series 1',
+      data: [60,60,55,60,105,60,70,91,140]
+    }, {
+      name: 'series 2',
+      data: [50,40,35,50,140,70,60,81,105]
+    }],
+    xaxis: {
+      categories: ["Week 01","Week 02","Week 03","Week 04","Week 05","Week 06","Week 07", "Week 08","Week 09"]
+    }
+  }
+  
+  var chart = new ApexCharts(document.querySelector("#chart"), options);
+  
+  chart.render();
+
+  
+  
+  
