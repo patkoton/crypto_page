@@ -207,6 +207,192 @@ document.addEventListener("DOMContentLoaded", function(){
   
   chart.render();
   
+
+
+  // Progress 67%
+  var options = {
+    chart: {
+      height: 200,
+      type: "radialBar"
+    },
+    
+    series: [66],
+    
+    plotOptions: {
+      radialBar: {
+        hollow: {
+          margin: 15,
+          size: "70%"
+        },
+       
+        dataLabels: {
+          showOn: "always",
+          name: {
+            offsetY: -10,
+            show: true,
+            color: "#888",
+            fontSize: "13px"
+          },
+          value: {
+            color: "#111",
+            fontSize: "30px",
+            show: true
+          }
+        }
+      }
+    },
+  
+    stroke: {
+      lineCap: "round",
+    },
+    labels: ["Progress"]
+  };
+  
+  var chart = new ApexCharts(document.querySelector("#chart3"), options);
+
+  chart.render();
+
+
+  // Progress 31%
+  var options = {
+    chart: {
+      height: 200,
+      type: "radialBar"
+    },
+    
+    series: [31],
+    
+    plotOptions: {
+      radialBar: {
+        hollow: {
+          margin: 15,
+          size: "70%"
+        },
+       
+        dataLabels: {
+          showOn: "always",
+          name: {
+            offsetY: -10,
+            show: true,
+            color: "#888",
+            fontSize: "13px"
+          },
+          value: {
+            color: "#111",
+            fontSize: "30px",
+            show: true
+          }
+        }
+      }
+    },
+  
+    stroke: {
+      lineCap: "round",
+    },
+    labels: ["Progress"]
+  };
+  
+  var chart = new ApexCharts(document.querySelector("#chart4"), options);
+  
+  chart.render();
+
+
+  // Progress 7%
+  var options = {
+    chart: {
+      height: 200,
+      type: "radialBar"
+    },
+    
+    series: [7],
+    
+    plotOptions: {
+      radialBar: {
+        hollow: {
+          margin: 15,
+          size: "70%"
+        },
+       
+        dataLabels: {
+          showOn: "always",
+          name: {
+            offsetY: -10,
+            show: true,
+            color: "#888",
+            fontSize: "13px"
+          },
+          value: {
+            color: "#111",
+            fontSize: "30px",
+            show: true
+          }
+        }
+      }
+    },
+  
+    stroke: {
+      lineCap: "round",
+    },
+    labels: ["Progress"]
+  };
+  
+  var chart = new ApexCharts(document.querySelector("#chart5"), options);
+  
+  chart.render();
+  
+  
+
+  // Line Chart2
+  var options = {
+    chart: {
+      height: 320,
+      type: "bar",
+      stacked: true,
+      stackType: "100%",
+      barThickness: 6,
+    },
+    dataLabels: {
+      enabled: false, 
+    },
+    plotOptions: {
+      bar: {
+          borderRadius: 10,
+          borderRadiusApplication: 'end',
+          borderRadiusWhenStacked: 'last',
+          columnWidth: '10%',
+      }
+    },
+    series: [
+      {
+        name: "Series 1",
+        data: [2, 23, 19, 45, 38, 52, 45, 19, 45, 38, 52, 45]
+      },
+      {
+        name: "Series 2",
+        data: [5, 24, 28, 15, 28, 34, 15, 15, 15, 15, 15, 15]
+      }
+    ],
+    xaxis: {
+      categories: [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05",
+        "06",
+        "07",
+        "07",
+        "07",
+        "07",
+        "07",
+        "07",
+      ]
+    }
+  };
+  
+  var chart = new ApexCharts(document.querySelector("#chart6"), options);
+  
+  chart.render();
   
   
   

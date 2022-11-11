@@ -25,6 +25,23 @@ body {
     background-color: #eee;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 0px;
+}
+
+body::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 0px;
+    background: #eee; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
 .navbar {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -316,8 +333,7 @@ span.invest {
     margin-right: 75px;
 }
 
-div.statistics, div.statistics2, div.chart, div.chart2 {
-    width: 35%;
+div.statistics, div.statistics2, div.chart, div.chart2, div.wallet {
     height: 500px;
     background-color: #ffffff;
     border-radius: 30px;
@@ -333,6 +349,38 @@ div.chart, div.chart2 {
     height: 600px;
 }
 
+div.wallet {
+    height: 1200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: transparent;
+    margin-right: 0;
+}
+
+div.wallet::-webkit-scrollbar {
+    width: 10px;
+}
+
+div.wallet::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+div.wallet::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #68e365; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+div.card_details {
+    height: 600px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    
+}
+
 .coin {
     font-size: 14px;
 }
@@ -345,7 +393,7 @@ a.weekly {
     color: #2258bf;
 }
 
-div.card_lemon, div.card_blue, div.card_purple {
+div.card_lemon, div.card_blue, div.card_purple, div.card_orange {
     width: 37%;
     height: 230px;
     background-color: #70b944;
@@ -359,6 +407,10 @@ div.card_blue {
 
 div.card_purple {
     background-color: #6647bf;
+}
+
+div.card_orange {
+    background-color: #ec8153;
 }
 
 .grp_circle {
@@ -457,11 +509,16 @@ a.button {
     margin-top: 40px;
 }
 
-div.order, div.order2 {
+div.order, div.order2, div.order3, div.order4 {
     width: 48%;
     height: 620px;
     background-color: #ffffff;
     border-radius: 30px;
+    position: relative;
+}
+
+div.order3, div.order4 {
+    height: 700px;
 }
 
 div.coin_button {
@@ -499,7 +556,7 @@ div.amount_btc2 {
 }
 
 .inner_btc_div {
-    width: 20%;
+    width: 200px;
     height: 80px;
     background-color: #eee;
     border-radius: 50px;
@@ -665,7 +722,7 @@ p.copyright {
         margin-left: 10px;
     }
 
-    div.statistics, div.statistics2, div.card_lemon, div.card_blue, div.card_purple, div.order, div.order2, div.trading_act, div.chart, div.chart2   {
+    div.statistics, div.statistics2, div.card_lemon, div.card_blue, div.card_purple, div.order, div.order2, div.trading_act, div.chart, div.chart2, div.wallet, .main_card_details, div.order3, div.order4   {
         width: 100%;
     }
 
@@ -682,7 +739,7 @@ p.copyright {
         height: 700px;
     }
 
-    p.trading_act, div.trading_act {
+    p.trading_act, div.trading_act, div.order3, #chart3, #chart4, #chart5, .profile_det {
         display: none;
     }
 
@@ -695,6 +752,16 @@ p.copyright {
         font-weight: 300;
         text-align: center;
     }
+
+    .card_det {
+        margin-top: 20px;
+    }
+
+    .btn_transfer {
+        padding-top: 9px;
+        background-color: #2258bf;
+    }
+    
 
     /* li.income, li.spend, li.install, li.invest {
         padding-left: 8px;
@@ -759,8 +826,8 @@ p.copyright {
 
  @media only screen and (width: 768px) {
 
-    div.card_lemon, div.card_blue, div.card_purple {
-        width: 50%;
+    div.card_lemon, div.card_blue, div.card_purple, div.card_orange {
+        width: 50% !important;
     }
 
     div.card_purple {
@@ -770,6 +837,11 @@ p.copyright {
     div.card_blue, .div_country2 {
         margin-top: 0;
     }
+
+    #chart3, #chart4, #chart5 {
+        display: block;
+    }
+
     
     /* .monero, .litecoin {
         margin-top: 10px;
