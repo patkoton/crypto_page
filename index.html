@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./assets/bootstrap-5.2.2-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Crypto Admin Page</title>
 </head>
 <body>
@@ -15,24 +15,24 @@
         <!-- SIDEBAR <span class="bg-white text-dark rounded shadow px-2 me-4">PH</span>-->
         <div class="sidebar" id="side_nav">
             <div class="header-box px-2 ms-3 pb-4 d-flex justify-content-center">
-                <a class="fs-4 text-black" href="./index.html">CryptoAdmin</a>
-                <button class="btn d-md-none d-block close-btn px-1 py-0 text-black"><i class="fa-solid fa-bars-staggered"></i></button>
+                <a class="fs-4 text-white" href="./index.html">CryptoAdmin</a>
+                <button class="btn d-md-block d-block close-btn px-1 py-0 text-white"><i class="fa-solid fa-bars-staggered"></i></button>
             </div>
             <div class="profile mt-4">
                 <div class="d-flex justify-content-center">
                     <img src="./assets/images/pic1.jpg" class="profile_img" alt="">
                 </div>
-                <p class="fs-6 fw-bold text-black mt-3 text-center"><span class="fw-normal">Hello,</span> Bob</p>
-                <p class="fw-light text-black text-center bg-opacity-50 mb-3" style="margin-top: -18px;">bob@mail.com</p>
+                <p class="fs-6 fw-bold text-white mt-3 text-center"><span class="fw-normal">Hello,</span> Bob</p>
+                <p class="fw-light text-white text-center bg-opacity-50 mb-3" style="margin-top: -18px;">bob@mail.com</p>
             </div>
             <ul class="list-unstyled px-2">
                 <li class="nav-item has-submenu text-decoration-none px-4 py-4 d-block">
-                    <a class="nav-link d-flex justify-content-between align-items-center" href="#">
+                    <a class="nav-link d-flex justify-content-between align-items-center" href="./index.html">
                         <span class="material-symbols-outlined">dashboard</span><span style="margin-left: -70px;">Dashboard</span> 
                         <span class="material-symbols-outlined">keyboard_arrow_down</span>
                     </a>
                     <ul class="submenu collapse ms-4">
-                        <li><a class="nav-link" href="#">Coin Details </a></li>
+                        <li><a class="nav-link" href="./coin-details.html">Coin Details </a></li>
                         <li><a class="nav-link" href="#">My Wallet </a></li>
                         <li><a class="nav-link" href="#">Transactions </a> </li>
                         <li><a class="nav-link" href="#">Market Capital </a> </li>
@@ -106,9 +106,9 @@
 
         <!-- NAVBAR -->
         <div class="content">
-             <nav class="navbar navbar-expand-md navbar-light bg-light">
+             <nav class="navbar navbar-expand-md navbar-light bg-light sticky-lg-top">
                 <div class="container-fluid">
-                    <div class="d-flex justify-content-between d-md-none d-block">
+                    <div class="d-flex justify-content-between d-md-block d-block">
                         <button class="btn px-1 py-0 open-btn me-2"><i class="fa-solid fa-bars-staggered"></i></button>
                         <a class="navbar-brand fx-4" href="#"><span class="bg-dark rounded px-2 py-0 text-white">PH</span></a>
                         
@@ -134,6 +134,8 @@
 
             <!-- MAIN-CONTENT -->
             <div class="px-3 pt-4 mb-4 ms-lg-4 ms-md-2 ms-sm-2">
+
+                <!-- FIRST (DASHBOARD) SECTION -->
                 <div class="d-lg-flex align-items-center justify-content-between mx-auto">
                     <div>
                         <h2 class="fs-2 fw-semibold text-black fw-normal">Dashboard</h2>
@@ -163,9 +165,10 @@
                     
                 </div>
 
+                <!-- SECOND (COIN) SECTION -->
                 <div class="row mx-auto mt-4">
                     <div class="d-lg-flex">
-                        <div class="col-lg-6 col-md-12 col-sm-12 d-12 d-flex align-items-center bg-light shadow col-6 bitcoin">
+                        <div class="col-lg-6 col-md-12 col-sm-12 d-12 d-flex position-relative align-items-center bg-light shadow col-6 bitcoin">
                             <div>
                                 <img src="./assets/images/Bitcoin.png" alt="" class="icon_img">
                             </div>
@@ -174,7 +177,7 @@
                                 <p class="par_cart"><img src="./assets/images/Combo Chart.1.png" alt="" style="width: 25px;"><span class="cart_no me-2">45%</span><span class="cart_text">This week</span></p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 d-12 d-flex align-items-center mx-lg-1 ms-sm-2 bg-light shadow col-6 monero">
+                        <div class="col-lg-6 col-md-12 col-sm-12 d-12 d-flex position-relative align-items-center mx-lg-1 ms-sm-2 bg-light shadow col-6 monero">
                             <div>
                                 <img src="./assets/images/Monero.png" alt="" class="icon_img">
                             </div>
@@ -186,7 +189,7 @@
                     </div>
 
                     <div class="d-lg-flex mt-2">
-                        <div class="col-lg-6 col-md-12 col-sm-12 d-12 d-flex align-items-center bg-light shadow col-6 ethereum">
+                        <div class="col-lg-6 col-md-12 col-sm-12 d-12 d-flex position-relative align-items-center bg-light shadow col-6 ethereum">
                             <div>
                                 <img src="./assets/images/Ethereum.png" alt="" class="icon_img">
                             </div>
@@ -195,7 +198,7 @@
                                 <p class="par_cart"><img src="./assets/images/Combo Chart (2).png" alt="" style="width: 25px;"><span class="cart_no2 me-2">45%</span><span class="cart_text">This week</span></p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-12 col-sm-12 d-12 d-flex align-items-center mx-lg-1 ms-sm-2  bg-light shadow col-6 litecoin">
+                        <div class="col-lg-6 col-md-12 col-sm-12 d-12 d-flex position-relative align-items-center mx-lg-1 ms-sm-2  bg-light shadow col-6 litecoin">
                             <div>
                                 <img src="./assets/images/Litecoin.png" alt="" class="icon_img">
                             </div>
@@ -211,22 +214,25 @@
                     </div> -->
                 </div>  
 
+                <!-- THIRD (STATISTICS) SECTION -->
                 <div class="row mt-5 mx-auto">
-                    <div class="col-lg-4 col-md-4 col-sm-12 statistics">
+                    <div class="col-lg-4 col-md-4 col-sm-12 position-relative statistics">
                         <h1 class="fs-5 fw-semibold p-4">Current Statistic</h1>
                         <div id="chart1"></div>
-                        <ul class="">
-                            <li class="income"><span class="text-secondary income">Income (66%)</span><span class="text-black fw-semibold">$167,884.21</span></li>
-                            <li class="spend"><span class="text-secondary spend">Spends (50%)</span><span class="text-black fw-semibold">$56,411.33</span></li>
-                            <li class="install"><span class="text-secondary install">Instalment (11%)</span><span class="text-black fw-semibold">$56,411.33</span></li>
-                            <li class="invest"><span class="text-secondary invest">Invest (23%)</span><span class="text-black fw-semibold">$56,411.33</span></li>
-                        </ul>
+                        <div class="d-flex justify-content-center">
+                            <ul class="list-unstyled ms-lg-5">
+                                <li class="income"><span class="text-secondary income">Income (66%)</span><span class="text-black fw-semibold">$167,884.21</span></li>
+                                <li class="spend"><span class="text-secondary spend">Spends (50%)</span><span class="text-black fw-semibold">$56,411.33</span></li>
+                                <li class="install"><span class="text-secondary install">Instalment (11%)</span><span class="text-black fw-semibold">$56,411.33</span></li>
+                                <li class="invest"><span class="text-secondary invest">Invest (23%)</span><span class="text-black fw-semibold">$56,411.33</span></li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="col-lg-8 col-md-8 col-sm-12 statistics2 ps-4">
+                    <div class="col-lg-8 col-md-8 col-sm-12 position-relative statistics2 ps-4">
                         <div class="d-flex justify-content-between align-items-center pt-4">
                             <div>
                                 <h1 class="fs-5 fw-semibold">Market Overview</h1>
-                                <p style="font-size: 13px;">Lorem ipsum dolor sit amet, consectetur</p>
+                                <p style="font-size: 13px;" class="text-secondary">Lorem ipsum dolor sit amet, consectetur</p>
                             </div>
                             <div>
                                 <div class="form-check form-check-inline">
@@ -261,8 +267,9 @@
                     </div>
                 </div>
 
-                <div class="d-lg-flex mt-5 mx-auto grp_cards">
-                    <div class="card_lemon pt-5 ps-4">
+                <!-- FOURTH (CARD) SECTION -->
+                <div class="d-lg-flex d-md-flex mt-5 ms-auto grp_cards">
+                    <div class="card_lemon pt-5 ps-4 position-relative">
                         <h1 class="text-white main_bal">Main Balance</h1>
                         <div class="d-flex justify-content-between align-items-center pe-4">
                             <div>
@@ -282,7 +289,7 @@
                             <p class="name">Marquezz Silalahi</p>
                         </div>
                     </div>
-                    <div class="card_blue pt-5 ps-4">
+                    <div class="card_blue pt-5 ps-4 position-relative">
                         <h1 class="text-white main_bal">Main Balance</h1>
                         <div class="d-flex justify-content-between align-items-center pe-4">
                             <div>
@@ -302,7 +309,7 @@
                             <p class="name">Marquezz Silalahi</p>
                         </div>
                     </div>
-                    <div class="card_purple pt-5 ps-4">
+                    <div class="card_purple pt-5 ps-4 position-relative">
                         <h1 class="text-white main_bal">Main Balance</h1>
                         <div class="d-flex justify-content-between align-items-center pe-4">
                             <div>
@@ -324,7 +331,8 @@
                     </div>
                 </div>
 
-                <div class="col-lg-12 col-md-12 col-sm-12 mx-auto shadow trading_act">
+                <!-- FIFTH (TRADING) SECTION -->
+                <div class="col-lg-12 col-md-12 col-sm-12 mx-auto position-relative shadow trading_act">
                     <div class="d-lg-flex justify-content-between pt-4 ps-4 pe-4">
                         <div>
                             <h1 class="text-black fs-5">Recent Trading Activities</h1>
@@ -339,7 +347,7 @@
                     </div>
 
                     <div class="px-5 mt-4 w-100">
-                        <table class="table table-responsive">
+                        <table class="table table-responsive table-borderless">
                             <tbody align="center">
                               <tr class="">
                                 <th scope="row"><div class="col_circle1"><span class="material-symbols-outlined text-white">south_east</span></div></th>
@@ -388,8 +396,9 @@
                     </div>
                 </div>
 
+                <!-- SIXTH (ORDER) SECTION -->
                 <div class="row mx-auto main_order">
-                    <div class="col-lg-6 col-md-12 col-sm-12 shadow order pt-4 ps-4 pe-2">
+                    <div class="col-lg-6 col-md-12 col-sm-12 shadow order pt-4 ps-4 pe-2 me-lg-2">
                         <div class="d-flex justify-content-between">
                             <h1 class="text-black fs-5">Sell Order</h1>
                             <div class="dropdown">
@@ -470,9 +479,9 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6 col-md-12 col-sm-12 shadow order2 pt-4 ps-4 pe-2">
+                    <div class="col-lg-6 col-md-12 col-sm-12 shadow order2 pt-4 ps-4 pe-2 ms-lg-3 ms-sm-2">
                         <div class="d-flex justify-content-between">
-                            <h1 class="text-black fs-5">Sell Order</h1>
+                            <h1 class="text-black fs-5">Buy Order</h1>
                             <div class="dropdown">
                                 <button class="btn btn-secondary border-0 bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <span class="material-symbols-outlined text-black fw-bold">more_vert</span>
@@ -551,13 +560,168 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- SEVENTH (QUICK TRADE) SECTION -->
+                <div class="col-lg-12 col-md-12 col-sm-12 mx-auto shadow trading_act">
+                    <div class="d-lg-flex justify-content-between pt-4 ps-4 pe-4">
+                        <div>
+                            <h1 class="text-black fs-5">Quick Trade</h1>
+                            <p class="text-secondary trading_act">Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+
+                        <div class="transfer d-flex">
+                            <img src="./assets/images/Litecoin.png" alt="" style="width: 50px;"> 
+                            <div class="dropdown">
+                                <button class="btn btn-secondary bg-transparent text-secondary fw-semibold border-0 dropdown-toggle transfer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  23,511 LTC
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item fw-semibold text-secondary" href="#">23,511 LTC</a></li>
+                                  <li><a class="dropdown-item text-secondary" href="#">345,455 ETH</a></li>
+                                  <li><a class="dropdown-item text-secondary" href="#">789,123 BTH</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center w-100">
+                        <div class="amount_btc d-flex justify-content-between position-relative pe-5">
+                            <div class="inner_btc_div text-black">Amount BTC</div>
+
+                            <div class="quantity mt-3">
+                                <input type="number" min="-20" max="20" step="1" value="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between pt-4 ps-4 pe-5">
+                        <h1 class="text-black fs-5">Quick Trade</h1>
+                        <a href="" class="fs-6">View more</a>
+                    </div>
+
+                    <div class="row mx-auto w-100 mt-3 px-5">
+                       <div class="col text-center">
+                            <img src="./assets/images/pic1.jpg" class="profile_img" alt="">
+                            <p class="text-black fw-semibold">Olivia</p>
+                            <p class="text-secondary username">@oliv62</p>
+                       </div>
+                       <div class="col text-center">
+                            <img src="./assets/images/pic1.jpg" class="profile_img" alt="">
+                            <p class="text-black fw-semibold">Olivia</p>
+                            <p class="text-secondary username">@oliv62</p>
+                       </div>
+                       <div class="col text-center">
+                            <img src="./assets/images/pic1.jpg" class="profile_img" alt="">
+                            <p class="text-black fw-semibold">Olivia</p>
+                            <p class="text-secondary username">@oliv62</p>
+                       </div>
+                       <div class="col text-center">
+                            <img src="./assets/images/pic1.jpg" class="profile_img" alt="">
+                            <p class="text-black fw-semibold">Olivia</p>
+                            <p class="text-secondary username">@oliv62</p>
+                       </div>
+                       <div class="col text-center">
+                            <img src="./assets/images/pic1.jpg" class="profile_img" alt="">
+                            <p class="text-black fw-semibold">Olivia</p>
+                            <p class="text-secondary username">@oliv62</p>
+                       </div>
+                    </div>
+
+                    <div class="row mx-auto w-100 mt-3 px-4 mt-5">
+                        <div class="col">
+                            <p class="text-secondary trading_act">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            </p>
+                        </div>
+                        <div class="col">
+                            <a href="" class="btn btn-primary w-100 btn_transfer fw-semibold"> TRANSFER NOW </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LAST (QUICK TRADE2) SECTION -->
+                <div class="col-lg-12 col-md-12 col-sm-12 mx-auto shadow trading_act">
+                    <div class="d-lg-flex justify-content-between pt-4 ps-4 pe-4">
+                        <div>
+                            <h1 class="text-black fs-5">Quick Trade</h1>
+                            <p class="text-secondary trading_act">Lorem ipsum dolor sit amet, consectetur</p>
+                        </div>
+
+                        <div class="transfer d-flex">
+                            <img src="./assets/images/Bitcoin.png" alt="" style="width: 60px;"> 
+                            <div class="dropdown">
+                                <button class="btn btn-secondary bg-transparent text-secondary fw-semibold border-0 dropdown-toggle transfer" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  23,511 LTC
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item fw-semibold text-secondary" href="#">23,511 LTC</a></li>
+                                  <li><a class="dropdown-item text-secondary" href="#">345,455 ETH</a></li>
+                                  <li><a class="dropdown-item text-secondary" href="#">789,123 BTH</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center w-100">
+                        <div class="amount_btc2 d-flex justify-content-between position-relative pe-5">
+                            <div class="inner_btc_div text-black">Amount BTC</div>
+
+                            <div class="quantity mt-3">
+                                <input type="number" min="-20" max="20" step="1" value="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center w-100">
+                        <div class="amount_btc2 d-flex justify-content-between position-relative pe-5">
+                            <div class="inner_btc_div text-black">Price BPL</div>
+
+                            <div class="quantity mt-3">
+                                <input type="number" min="-20" max="20" step="1" value="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center w-100">
+                        <div class="amount_btc2 d-flex justify-content-between position-relative pe-5">
+                            <div class="inner_btc_div text-black">Fee (1%)</div>
+
+                            <div class="quantity mt-3">
+                                <input type="number" min="-20" max="20" step="1" value="1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center w-100">
+                        <div class="amount_btc2 d-flex justify-content-between position-relative pe-5">
+                            <div class="inner_btc_div text-black">Total BPL</div>
+
+                            <div class="quantity mt-3">
+                                <input type="number" min="-20" max="20" step="1" value="1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-auto w-100 mt-3 px-4 mt-5">
+                        <div class="col me-5">
+                            <p class="text-secondary trading_act">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            </p>
+                        </div>
+                        <div class="col d-flex ms-5">
+                            <a href="" class="btn w-25 btn_transfer2 me-3">BUY<span class="material-symbols-outlined ms-2">south_east</span></a>
+                            <a href="" class="btn w-25 btn_transfer3">SELL<span class="material-symbols-outlined ms-2">north_west</span></a>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="text-center text-black mt-5 copyright">Copyright © Designed & Developed by <a href="https://provehub.com/">ProveHub</a> 2022</p>
             </div>
             
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
     <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/c3f0615e4f.js" crossorigin="anonymous"></script>
@@ -572,25 +736,6 @@
     </script>
     <script src="./assets/bootstrap-5.2.2-dist/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-
-        // remove and add class
-       $(".sidebar ul li").on('click', function(){
-            $(".sidebar ul li.active").removeClass('active');
-            $(this).addClass('active');  
-        }) 
-
-
-        // open-btn
-        $('.open-btn').on('click', function(){
-           $('.sidebar').addClass('active'); 
-        })
-
-
-        // remove-btn
-        $('.close-btn').on('click', function(){
-           $('.sidebar').removeClass('active'); 
-        })
-    </script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
